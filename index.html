@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audio Processing App</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div id="root">
+    <div class="container">
+      <div class="logo">
+        <img src="pink-lips-logo.png" alt="Pink Lips Logo" />
+      </div>
+      <div class="audio-player">
+        <input type="file" id="audio-file" accept="audio/*" />
+        <button class="process-btn">
+          <i class="fas fa-cog"></i> Process
+        </button>
+        <div class="progress-container">
+          <div class="progress" id="progress"></div>
+        </div>
+        <button class="download-btn">
+          <i class="fas fa-download"></i> Download
+        </button>
+      </div>
+    </div>
+  </div>
+  <script src="/main.js"></script>
+</body>
+</html>
